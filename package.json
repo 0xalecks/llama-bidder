@@ -1,0 +1,23 @@
+{
+  "name": "llamas",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Beanstalk",
+  "license": "MIT",
+  "scripts": {
+    "generate": "typechain --target=ethers-v5 --ts-nocheck --out-dir=./src/generated/ ./src/abi/*.json",
+    "dev": "tsx"
+  },
+  "dependencies": {
+    "@beanstalk/sdk-core": "^0.0.2",
+    "@typechain/ethers-v5": "^10.2.0",
+    "chalk": "^5.2.0",
+    "dotenv": "^16.0.3",
+    "ethers": "v5",
+    "typechain": "^8.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "tsx": "^3.12.6"
+  }
+}
